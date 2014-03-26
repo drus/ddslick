@@ -160,6 +160,7 @@
                 //EVENTS
                 //Displaying options
                 obj.find('.dd-select').on('click.ddslick', function () {
+                   if(!$(this).find('.dd-selected-value').prop('disabled'))
                     open(obj);
                 });
 
